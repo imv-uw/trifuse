@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F37CD6BA-1177-4F56-BCD6-4DDEB3230392}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release2\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FNA">
+      <HintPath>..\lib\FNA\Release\FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.5.1\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\ArraySource.cs" />
+    <Compile Include="Collections\ArraySourceEnumerator.cs" />
+    <Compile Include="Collections\BlockingCollectionSink.cs" />
+    <Compile Include="Collections\NodeArraySource.cs" />
+    <Compile Include="Interfaces\IArraySource.cs" />
+    <Compile Include="Interfaces\IDeepCopy.cs" />
+    <Compile Include="Interfaces\ICoordinateFrame.cs" />
+    <Compile Include="Interfaces\IDeepCopyObjectGraph.cs" />
+    <Compile Include="Interfaces\IMirror.cs" />
+    <Compile Include="Interfaces\ITransformable.cs" />
+    <Compile Include="Interfaces\ITransformChild.cs" />
+    <Compile Include="Interfaces\ITransformNode.cs" />
+    <Compile Include="Interfaces\ITree.cs" />
+    <Compile Include="Quick\DeepCloneObjectGraph.cs" />
+    <Compile Include="Quick\Pattern\MirrorNodeArraySource.cs" />
+    <Compile Include="Quick\Pattern\PatternStructure.cs" />
+    <Compile Include="Select\Selection.cs" />
+    <Compile Include="Select\Selector.cs" />
+    <Compile Include="Select\SseSelector.cs" />
+    <Compile Include="Tools\SymmetryBuilders\IdentitySymmetryBuilder.cs" />
+    <Compile Include="Quick\IndexSelection.cs" />
+    <Compile Include="Quick\Model.cs" />
+    <Compile Include="Quick\Pattern.cs" />
+    <Compile Include="Quick\Pattern\AxisPattern.cs" />
+    <Compile Include="Quick\Pattern\MainchainMirrorAa.cs" />
+    <Compile Include="Quick\Pattern\MirrorAa.cs" />
+    <Compile Include="Quick\Pattern\MirrorArraySource.cs" />
+    <Compile Include="Quick\Pattern\MirrorAtom.cs" />
+    <Compile Include="Quick\Pattern\MirrorChain.cs" />
+    <Compile Include="Quick\Pattern\MirrorStructure.cs" />
+    <Compile Include="Quick\Selection.cs" />
+    <None Include="Database\Rotamer\rotamer_coordinates.json" />
+    <None Include="Database\Rotamer\rotamer_definition.json" />
+    <None Include="Quick\SymdefPattern.cs" />
+    <Compile Include="Quick\Tuples\Aa2.cs" />
+    <Compile Include="Io\Paths.cs" />
+    <Compile Include="PDB\AtomSource.cs" />
+    <Compile Include="PDB\PDBIterator.cs" />
+    <Compile Include="Quick\Element.cs" />
+    <Compile Include="Quick\Rotamer.cs" />
+    <Compile Include="Quick\Structure.cs" />
+    <Compile Include="Tools\Analysis\Interface.cs" />
+    <Compile Include="Tools\Filesystem.cs" />
+    <Compile Include="Tools\Fusion.cs" />
+    <Compile Include="Tools\MatrixUtil.cs" />
+    <Compile Include="Tools\SymmetryBuilders\CxSymmetryBuilder.cs" />
+    <Compile Include="Tools\SymmetryBuilders\DxSymmetryBuilder.cs" />
+    <Compile Include="Tools\SymmetryBuilders\IcosahedralSymmetryBuilder.cs" />
+    <Compile Include="Tools\SymmetryBuilders\OctahedralSymmetryBuilder.cs" />
+    <Compile Include="Tools\SymmetryBuilders\PxSymmetryBuilder.cs" />
+    <Compile Include="Tools\SymmetryBuilders\SymmetryBuilder.cs" />
+    <Compile Include="Tools\SymmetryBuilders\SymmetryBuilderFactory.cs" />
+    <Compile Include="Tools\SymmetryBuilders\TetrahedralSymmetryBuilder.cs" />
+    <Compile Include="Tools\VectorMath.cs" />
+    <None Include="Database\Json\residues.json" />
+    <Compile Include="Quick\Aa.cs" />
+    <Compile Include="Quick\AaDefinition.cs" />
+    <Compile Include="Quick\AaTable.cs" />
+    <Compile Include="Quick\Atom.cs" />
+    <Compile Include="Quick\AtomDefinition.cs" />
+    <Compile Include="Quick\Chain.cs" />
+    <Compile Include="Tools\Range.cs" />
+    <Compile Include="PDB\SeqresRecord.cs" />
+    <Compile Include="PDB\HelixRecord.cs" />
+    <Compile Include="PDB\PdbQuick.cs" />
+    <Compile Include="PDB\AtomRecord.cs" />
+    <Compile Include="PDB\ConectRecord.cs" />
+    <Compile Include="PDB\EndmdlRecord.cs" />
+    <Compile Include="PDB\EndRecord.cs" />
+    <Compile Include="PDB\HetatmRecord.cs" />
+    <Compile Include="PDB\ModelRecord.cs" />
+    <Compile Include="PDB\Record.cs" />
+    <Compile Include="PDB\TerRecord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+    <Compile Include="Tools\Clash.cs" />
+    <Compile Include="Tools\CoordinateSystems\CoordinateSystem.cs" />
+    <Compile Include="Tools\CoordinateSystems\LineTrackingCoordinateSystem.cs" />
+    <Compile Include="Tools\Geometry.cs" />
+    <Compile Include="Tools\Line.cs" />
+    <Compile Include="Tools\Resfile.cs" />
+    <Compile Include="Tools\Rmsd.cs" />
+    <Compile Include="Tools\SecondaryStructure.cs" />
+    <Compile Include="Tools\Sequence.cs" />
+    <Compile Include="Tools\SS.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY "$(ProjectDir)\Database" "$(SolutionDir)\CmdCore\bin\Debug\Database\" /S /Y /D
+XCOPY "$(ProjectDir)\Database" "$(SolutionDir)\CmdCore\bin\Release\Database\" /S /Y /D
+XCOPY "$(ProjectDir)\Database" "$(SolutionDir)\Test\bin\Debug\Database\" /S /Y /D
+XCOPY "$(ProjectDir)\Database" "$(SolutionDir)\Test\bin\Release\Database\" /S /Y /D
+echo "TARGET_DIR: $(TargetDir)"
+echo "SOLUTION_DIR: $(SolutionDir)\M"
+echo OUT_DIR: $(OutDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

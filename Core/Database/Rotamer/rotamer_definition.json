@@ -1,0 +1,195 @@
+﻿[
+    {
+        "residue": "ALA",
+        "letter": "A",
+        "backbone": [ ],
+        "dependents": [ ]
+    },
+    {
+        "residue": "ARG",
+        "letter": "R",
+        "backbone": [ "N", "CA", "CB", "CG", "CD", "NE", "CZ" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG1", "HG2", "CD", "HD1", "HD2", "NE", "HE", "CZ", "NH1", "HH11", "HH12", "NH2", "HH21", "HH22" ],
+            [ "CG", "HG1", "HG2", "CD", "HD1", "HD2", "NE", "HE", "CZ", "NH1", "HH11", "HH12", "NH2", "HH21", "HH22" ],
+            [ "CD", "HD1", "HD2", "NE", "HE", "CZ", "NH1", "HH11", "HH12", "NH2", "HH21", "HH22" ],
+            [ "NE", "HE", "CZ", "NH1", "HH11", "HH12", "NH2", "HH21", "HH22" ]
+        ]
+    },
+    {
+        "residue": "ASN",
+        "letter": "N",
+        "backbone": [ "N", "CA", "CB", "CG", "OD1" ],
+        "dependents": [
+            [ "CB", "HB1", "HB2", "CG", "OD1", "ND2", "HD21", "HD22" ],
+            [ "CG", "OD1", "ND2", "HD21", "HD22" ]
+        ]
+    },
+    {
+        "residue": "ASP",
+        "letter": "D",
+        "backbone": [ "N", "CA", "CB", "CG", "OD1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "OD1", "OD2" ],
+            [ "OD1", "OD2" ]
+        ]
+    },
+    {
+        "residue": "CYH",
+        "letter": "C",
+        "backbone": [ "N", "CA", "CB", "SG" ],
+        "dependents": [
+            [ "HB1", "HB2", "SG", "HG" ]
+        ]
+    },
+    {
+        "residue": "CYS",
+        "letter": "C",
+        "backbone": [ "N", "CA", "CB", "SG" ],
+        "dependents": [
+            [ "HB1", "HB2", "SG" ]
+        ]
+    },
+    {
+        "residue": "GLN",
+        "letter": "Q",
+        "backbone": [ "N", "CA", "CB", "CG", "CD", "OE1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG1", "HG2", "CD", "OE1", "NE2", "HE21", "HE22" ],
+            [ "CG", "HG1", "HG2", "CD", "OE1", "NE2", "HE21", "HE22" ],
+            [ "OE1", "NE2", "HE21", "HE22" ]
+        ]
+    },
+    {
+        "residue": "GLU",
+        "letter": "E",
+        "backbone": [ "N", "CA", "CB", "CG", "CD", "OE1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG1", "HG2", "CD", "OE1", "OE2" ],
+            [ "HG1", "HG2", "CD", "OE1", "OE2" ],
+            [ "OE1", "OE2" ]
+        ]
+    },
+    {
+        "residue": "GLY",
+        "letter": "G",
+        "backbone": [ ],
+        "dependents": [ ]
+    },
+    {
+        "residue": "HIE",
+        "letter": "H",
+        "backbone": [ "N", "CA", "CB", "CG", "ND1" ],
+        "dependents": [
+            [ "CG", "HB1", "HB2", "CD2", "HD2", "ND1", "CE1", "HE1", "NE2", "HE2" ],
+            [ "CD2", "HD2", "ND1", "CE1", "HE1", "NE2", "HE2" ]
+        ]
+    },
+    {
+        "residue": "HID",
+        "letter": "H",
+        "backbone": [ "N", "CA", "CB", "CG", "ND1" ],
+        "dependents": [
+            [ "CG", "HB1", "HB2", "CD2", "HD2", "ND1", "HD1", "CE1", "HE1", "NE2" ],
+            [ "CD2", "HD2", "ND1", "HD1", "CE1", "HE1", "NE2" ]
+        ]
+    },
+    {
+        "residue": "ILE",
+        "letter": "I",
+        "backbone": [ "N", "CA", "CB", "CG1", "CD1" ],
+        "dependents": [
+            [ "HB", "CG1", "HG11", "HG12", "CG2", "HG21", "HG22", "HG23", "CD1", "HD11", "HD12", "HD13" ],
+            [ "HG12", "HG11", "CD1", "HD11", "HD12", "HD13" ]
+        ]
+    },
+    {
+        "residue": "LEU",
+        "letter": "L",
+        "backbone": [ "N", "CA", "CB", "CG", "CD1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG", "CD1", "HD11", "HD12", "HD13", "CD2", "HD21", "HD22", "HD23" ],
+            [ "HG", "CD1", "HD11", "HD12", "HD13", "CD2", "HD21", "HD22", "HD23" ]
+        ]
+    },
+    {
+        "residue": "LYS",
+        "letter": "K",
+        "backbone": [ "N", "CA", "CB", "CG", "CD", "CE", "NZ" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG1", "HG2", "CD", "HD1", "HD2", "CE", "HE1", "HE2", "NZ", "HZ1", "HZ2", "HZ3" ],
+            [ "HG1", "HG2", "CD", "HD1", "HD2", "CE", "HE1", "HE2", "NZ", "HZ1", "HZ2", "HZ3" ],
+            [ "HD1", "HD2", "CE", "HE1", "HE2", "NZ", "HZ1", "HZ2", "HZ3" ],
+            [ "HE1", "HE2", "NZ", "HZ1", "HZ2", "HZ3" ]
+        ]
+    },
+    {
+        "residue": "MET",
+        "letter": "M",
+        "backbone": [ "N", "CA", "CB", "CG", "SD", "CE" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG1", "HG2", "SD", "CE", "HE1", "HE2", "HE3" ],
+            [ "HG1", "HG2", "SD", "CE", "HE1", "HE2", "HE3" ],
+            [ "CE", "HE1", "HE2", "HE3" ]
+        ]
+    },
+    {
+        "residue": "PHE",
+        "letter": "F",
+        "backbone": [ "N", "CA", "CB", "CG", "CD1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "CD1", "HD1", "CD2", "HD2", "CE1", "HE1", "CE2", "HE2", "CZ", "HZ" ],
+            [ "CD1", "HD1", "CD2", "HD2", "CE1", "HE1", "CE2", "HE2", "CZ", "HZ" ]
+        ]
+    },
+    {
+        "residue": "PRO",
+        "letter": "P",
+        "backbone": [ "N", "CA", "CB", "CG" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "HG1", "HG2" ]
+        ]
+    },
+    {
+        "residue": "SER",
+        "letter": "S",
+        "backbone": [ "N", "CA", "CB", "OG" ],
+        "dependents": [
+            [ "HB1", "HB2", "OG", "HG" ]
+        ]
+    },
+    {
+        "residue": "THR",
+        "letter": "T",
+        "backbone": [ "N", "CA", "CB", "OG1" ],
+        "dependents": [
+            [ "HB", "OG1", "HG1", "CG2", "HG21", "HG22", "HG23" ]
+        ]
+    },
+    {
+        "residue": "TRP",
+        "letter": "W",
+        "backbone": [ "N", "CA", "CB", "CG", "CD1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "CD1", "HD1", "CD2", "NE1", "HE1", "CE2", "CE3", "HE3", "CZ2", "HZ2", "CZ3", "HZ3", "CH2", "HH2" ],
+            [ "CD1", "HD1", "CD2", "NE1", "HE1", "CE2", "CE3", "HE3", "CZ2", "HZ2", "CZ3", "HZ3", "CH2", "HH2" ]
+        ]
+    },
+    {
+        "residue": "TYR",
+        "letter": "Y",
+        "backbone": [ "N", "CA", "CB", "CG", "CD1" ],
+        "dependents": [
+            [ "HB1", "HB2", "CG", "CD1", "HD1", "CD2", "HD2", "CE1", "HE1", "CE2", "HE2", "CZ", "OH", "HH" ],
+            [ "CD1", "HD1", "CD2", "HD2", "CE1", "HE1", "CE2", "HE2", "CZ", "OH", "HH" ]
+        ]
+    },
+    {
+        "residue": "VAL",
+        "letter": "V",
+        "backbone": [ "N", "CA", "CB", "CG1" ],
+        "dependents": [
+            [ "HB", "CG1", "HG11", "HG12", "HG13", "CG2", "HG21", "HG22", "HG23" ]
+        ]
+    }
+]

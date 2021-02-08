@@ -1,0 +1,11 @@
+--- src/managed/Shared/Structure/DatabasePaths.cs
++++ src/managed/Shared/Structure/DatabasePaths.cs
+@@ -16,6 +16,8 @@
+             public static string GaussianPseudobondJsonPath = Path.Combine("Database", "Minimization", "pseudobonds_gaussian.json");
+             public static string IntraResidueBondsJsonPath = Path.Combine("Database", "Minimization", "intra_residue_bonds.json");
+             public static string PeptideBondJsonPath = Path.Combine("Database", "Minimization", "peptide_bond.json");
++            public static string Sp3CenterJsonPath = Path.Combine("Database", "Minimization", "sp3_centers.json");
++            public static string GaussianAngleJsonPath = Path.Combine("Database", "Minimization", "angle_not_sp3.json");
+ 
+             public static string GetPath(GaussianBondType bondType)
+             {
