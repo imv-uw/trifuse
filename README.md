@@ -9,7 +9,7 @@ Protein nanoparticles and lattices are of interest in medicine and nanotechnolog
 ## Build
 
 1. Download the project files and open `Cpd.sln` with Visual Studio 2019 or later on Windows. 
-2. Right click the solution file within the Solution Explorer and select "Restore NuGet Packages"
+2. Right click the solution file within the Solution Explorer and select "Restore NuGet Packages". The option might not be available until a build is attempted and fails on account of missing NuGet packages.
 3. Build in Release mode for production use.
 
 ## Example command-line
